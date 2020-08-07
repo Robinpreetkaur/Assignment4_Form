@@ -27,18 +27,46 @@ namespace Assignment4_Form
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BMIlabel_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void myHeight_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void myWeight_click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BMIcalculatorForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CalculateBMIbutton_click(object sender, EventArgs e)
+        { 
+        double weight = Convert.ToDouble(WeightTextBox.Text);
+        double height = Convert.ToDouble(HeightTextBox.Text);
+        double bmi = 0.0;
+
+            if (MetricRadioButton.Checked)
+            {
+                bmi = weight / (height* height);  
+            }
+
+            else if(ImpericalRadioButton.Checked)
+            {
+
+                bmi = (730 * weight) / (height* height);
+
+            }
+
+            BMIresultTextbox.Text = bmi.ToString();
+            //CalculateBMITextBox.Text = BmiType(bmi);
 
         }
     }
