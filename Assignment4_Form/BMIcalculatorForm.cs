@@ -3,7 +3,7 @@
    Author’s student number: 301100296
    Date last Modified: 7 Aug ,2020
    Program description: 
-       Generate a program in C# of BMICalcutor in metric and imperial Units in forms .
+       Generate a program in C# of BMICalculator in metric and imperial Units in forms .
 */
 
 
@@ -75,7 +75,7 @@ namespace Assignment4_Form
             {
              
 
-                bmi = (730 * weight) / (height* height);
+                bmi = (703 * weight) / (height* height);
 
             }
 
